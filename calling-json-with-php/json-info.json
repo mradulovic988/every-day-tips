@@ -1,0 +1,23 @@
+[
+  {
+    "author": "Marko",
+    "author_name": [
+      {
+        "id": "john.doe@mycompany.com",
+        "name": "John Doe",
+        "type": "agent"
+      }
+    ]
+  },
+
+  {
+    "author": "Sam",
+    "author_name": [
+      {
+        "id": "doe.doe@mycompany.com",
+        "name": "John Doe 2",
+        "type": "agent 2"
+      }
+    ]
+  }
+]

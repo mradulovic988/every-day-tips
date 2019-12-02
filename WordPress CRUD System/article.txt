@@ -1,0 +1,1 @@
+https://laloah.wordpress.com/2013/06/14/basic-example-of-wordpress-plugin-to-select-update-insert-and-delete-from-database-crud

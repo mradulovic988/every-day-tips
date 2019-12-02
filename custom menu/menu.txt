@@ -1,0 +1,22 @@
+<div class="container desktop-menu">
+	<div class="row">
+		<div class="col-md-offset-3 col-md-12">
+			<ul id="menu-main_menu" class="nav navbar-nav navbar-center">
+			   <?php
+		   		/*
+		   		*
+		   		* Custom menu for desktop
+		   		* 
+		   		*/
+			   	wp_nav_menu( array(
+				  	'menu' => 'main_menu',
+				  	'depth' => 3,
+				  	'container' => false,
+				  	'menu_class' => 'nav navbar-nav navbar-center',
+				  	'walker' => new WP_Bootstrap_Navwalker(),
+				));
+				?>
+			</ul>
+		</div>
+	</div>
+</div>	

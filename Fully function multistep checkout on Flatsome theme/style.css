@@ -1,0 +1,149 @@
+/*
+Theme Name: Vault cargo
+Theme URI: https://www.fixrunner.com
+Template: flatsome
+Author: FixRunner WordPress Support
+Author URI: https://www.fixrunner.com
+Description: FixRunner WordPress Support - Flatsome Child Theme
+Version: 1.0.0.1558569768
+Updated: 2019-05-23 00:02:48
+*/
+
+
+/* --------- Order Process ----------------- */
+
+ul.order-process {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    background: none repeat scroll 0% 0% #fff;
+}
+
+ul.order-process li {
+    display: inline-block;
+    width: 23%;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #614580;
+    background-color: #614580;
+}
+
+ul.order-process li.active {
+    box-shadow: 0px 11px 8px -10px #5d477c, 0px -11px 8px -10px #5d477c;
+    border-top: 2px solid #58c440!important;
+    border-bottom: 2px solid #58c440!important;
+}
+
+.off {
+    border: #c9bfd9!important;
+    background-color: #c9bfd9!important;
+    cursor: not-allowed;
+}
+
+ul.order-process li {
+    height: 50px;
+    margin-right: 15px !important;
+    border-color: transparent;
+    border: none !important;
+    position: relative;
+}
+
+ul.order-process li:before {
+    content: " ";
+    position: absolute;
+    right: auto;
+    left: 0;
+    border-left: 25px solid #fff;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    z-index: 9;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.noArrow:before {
+    display: none !important;
+}
+
+ul.order-process li:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-top: 26px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 30px solid #614580;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+    z-index: 999;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.off:after {
+    border-left: 30px solid #c9bfd9!important;
+}
+
+@media screen and (max-width: 600px) {
+    ul.order-process li {
+        width: 43%;
+    }
+}
+
+#order_review {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    a.return_to_cart {
+        position: relative;
+        bottom: 6px;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+    .col-md-6.left_checkout_row {
+        width: 55%;
+        padding-right: 20px;
+    }
+    .col-md-4.right_checkout_row {
+        width: 44%;
+    }
+}
+
+table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents {
+    padding-left: 40px;
+}
+
+.col-md-4.right_checkout_row {
+    border-left: 1px solid #ececec;
+}
+
+.woocommerce-cart table.shipping__table.shipping__table--multiple {
+    display: none;
+}
+
+p.product_quantity_custom {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 900;
+}
+
+p.shipping_next_step_text {
+    font-weight: 900;
+}
+
+.woocommerce-checkout input.minus.button.is-form,
+.woocommerce-checkout input.plus.button.is-form {
+    display: none;
+}
+
+.woocommerce-checkout .input-text.qty.text.fl-input {
+    cursor: not-allowed;
+}
+
+.woocommerce-cart tr.order-total {
+    display: none;
+}
